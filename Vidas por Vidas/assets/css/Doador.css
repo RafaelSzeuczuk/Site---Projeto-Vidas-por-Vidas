@@ -1,0 +1,297 @@
+/* formatações gerais */
+* {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ body {
+    font-size: 18px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background:
+       linear-gradient(#fff, #8cc5fa, #fff);
+ }
+ 
+ .imagem {
+    display: block;
+    /* Ensure block-level behavior */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+ 
+ /*formatações gerais do layout*/
+ #area-cabecalho {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ #area-logo {
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #area-menu {   
+    font-size: 18px;
+    padding: 2px;
+    text-align: right;
+ }
+ 
+ #area-principal {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-grow: 1;
+ }
+ 
+ .mapa{
+   display: flex;
+   border-radius: 15px;
+   margin-top: 15px;
+}
+
+ @media (max-width: 480px) {
+    .postagem {
+       width: 95%;
+       padding: 10px;
+       margin-bottom: 10px;
+       background-color: #fff;
+       border-radius: 15px;
+       text-align: center;
+    }
+ }
+ 
+ @media (min-width: 481px) {
+ .postagem {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+ }
+ }
+ 
+ /*formatacao do menu*/
+ a {
+   text-decoration: none;
+   padding: 4px;
+   margin-top: 7px;
+ }
+ 
+ a:visited {
+    color: #f3d31e;
+    text-shadow: 3px 3px black;
+ }
+ 
+ #area-cabecalho a:visited {
+    color: #000000;
+    padding: 12px;
+ }
+ 
+ #area-cabecalho a:hover {
+    color: #000000;
+    background-color: #fff;
+ 
+    text-decoration: none;
+ }
+ 
+ /*estilos greais*/
+ 
+ @media (min-width: 876px) {
+   h1 {
+      color: #000000;
+   
+      font-size: 35px;
+   }
+   
+   h2 {
+      color: #000000;
+   }}
+  
+   @media (max-width: 875px) {
+     h1 {
+        color: #000000;
+     
+        font-size: 26px;
+     }
+     
+     h2 {
+        color: #000000;
+        font-size: 20px;
+     }}
+ 
+ h3 {
+    color: #000000;
+    background-color: #ccc;
+    padding: 5px;
+ }
+
+/*Rodapé*/
+@media (min-width: 756px) {
+   footer {
+      background-color: #5b98d1;
+
+      padding: 10px;
+
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-between;
+
+      position: relative;
+   }
+
+   .menu {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 35%;
+      transform: translate(-50%, -50%);
+   }
+
+   .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .menu li {
+      padding: 10px;
+   }
+
+   .menu a {
+      color: #fff;
+      text-decoration: none;
+   }
+
+   .menu a:hover {
+      color: #ccc;
+   }
+
+   .social-media {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+   }
+
+   .social-media a {
+      margin-right: 10px;
+
+      font-size: 24px;
+
+      color: #fff;
+
+      text-decoration: none;
+   }
+
+   .social-media a:last-child {
+      margin-right: 0;
+   }
+
+   .p {
+      position: absolute;
+
+      bottom: 0;
+
+      position: absolute;
+      left: 50%;
+
+      transform: translate(-50%);
+      text-align: center;
+
+      padding: 10px;
+
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 755px) {
+   footer {
+      background-color: #5b98d1;
+
+      padding: 10px;
+
+      justify-content: space-between;
+
+      align-items: center;
+   }
+
+   .menu {
+      flex: 1;
+
+      text-align: center;
+   }
+
+   .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .menu li {
+      padding: 10px;
+   }
+
+   .menu a {
+      color: #fff;
+      text-decoration: none;
+   }
+
+   .menu a:hover {
+      color: #ccc;
+   }
+
+   .social-media {
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+      justify-content: center;
+   }
+
+   .social-media a {
+      margin-right: 10px;
+
+      font-size: 24px;
+
+      color: #fff;
+
+      text-decoration: none;
+   }
+
+   .social-media a:last-child {
+      margin-right: 0;
+   }
+
+   .p {
+      text-align: center;
+
+      padding: 10px;
+
+      font-size: 12px;
+   }
+}
